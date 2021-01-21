@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Felinos</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+<section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <img class="" src="assets/img/Logo_DazaSoftware.png" alt="Imperial">
+        </div>
+        <h1>Bienvenidos a "Felinos"</h1>
+        <div class="actions">
+          <a href="#Buscador" class="btn-get-started">Buscador Felino</a>
+          <a href="#Fotos" class="btn-services">fotos Felinas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <header id="header">
+    <div class="container d-flex align-items-center">
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/Logo_DazaSoftware.png" alt=""></a>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Principal</a></li>
+          <li><a href="#Buscador">Buscador</a></li>
+          <li><a href="#Fotos">Fotos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+
+    <!-- ======= Buscador Felinos ======= -->
+    <section id="Buscador">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Buscador Felinos</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description"> En esta sección se muestra la variedad de Felinos</p>     
+              <div class = "grid row">
+                <div class="col-md-8">
+                    <div> 
+                      <strong>Raza Felina: </strong> 
+                      <select id="raza" onchange="datoNuevo(value)">  
+                      </select>
+                    </div>
+                    <span id="gatos">
+                    </span>                
+                </div>
+                <div class="col-md-4" id="gato_img">
+                </div> 
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======= 18 fotos felinas ======= -->
+    <section id="Fotos"> 
+      <div class="text-center">
+        <h3 class="section-title">fotos felinas</h3>    
+      </div>
+      <div  class="alignFotos">    
+         <div id="fotosGat" class="galeria"></div>
+      </div>
+  </section> 
+    <section>    
+    <div class=" boton text-center">
+      <button class="botonNue" type="button" onclick="primero()"><img width="50px" src="assets/img/iconos/primero.jpg"></button>
+      <button class="botonNue" type="button" onclick="atras()"><img width="50px" src ="assets/img/iconos/anterior.jpg"></button>
+      <button class="botonNue" type="button" onclick="adelante()"><img width="50px" src="assets/img/iconos/siguiente.jpg" alt=""></button>
+      <button class="botonNue" type="button" onclick="ultimo()"><img width="50px" src="assets/img/iconos/ultimo.jpg"></button>
+    </div>   
+    <div class=" d-grid gap-2 my-5 text-center">
+      <button class="btn btn-primary" type="button" onclick="ajaxFotos()">VER OTROS</button>    
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            <strong>Sara Gallardo Q.</strong>. 
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
